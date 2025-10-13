@@ -1,10 +1,10 @@
 import React from "react";
-import CharacterList from "./components/CharacterList";
+import AnimeList from "./components/AnimeList";
 
 function App() {
     return (
         <div>
-            <CharacterList />
+            <AnimeList />
         </div>
     );
 }
