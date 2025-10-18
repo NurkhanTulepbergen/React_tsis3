@@ -4,7 +4,6 @@ import "./AnimeCard.css";
 export default function AnimeCard({ anime }) {
     const fallbackImage = "https://via.placeholder.com/200x300?text=No+Image";
 
-    // если данных нет — не рендерим
     if (!anime || !anime.images || !anime.images.jpg) return null;
 
     return (

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import AnimeCard from "./AnimeCard";
 import "./AnimeList.css";
 
@@ -25,7 +25,10 @@ export default function AnimeList() {
         }
     };
 
-    // Filter anime by search term
+    useEffect(() => {
+        console.log("AnimeList component mounted");
+    }, []);
+
     const filteredAnime = animeList.filter(
         (anime) =>
             anime &&
@@ -40,6 +43,7 @@ export default function AnimeList() {
     return (
         <div className="anime-list-container">
             <h2>Top Anime</h2>
+
             <div className="search-bar">
                 <input
                     type="text"
